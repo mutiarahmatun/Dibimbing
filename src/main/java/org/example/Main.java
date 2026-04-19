@@ -5,14 +5,32 @@ public class Main {
         Main obj = new Main();
 
         System.out.println(obj.getAngka());
+        System.out.println(obj.getCumulativeData());
         System.out.println(obj.getNilaiDouble());
         System.out.println(obj.getHuruf());
         System.out.println(obj.isLogin());
         System.out.println(obj.getNama());
+        System.out.println();
+
+        System.out.println("Hasil jadi penjumlahan = " + obj.tambah(5, 6));
+        System.out.println("Hasil dari pengurangan = " + obj.kurang(6,7));
+        System.out.println("Boolean kelulusan = " + obj.isLulus(65));
+        System.out.println("Boolean kelulusan = " + obj.isLulus(89));
+        System.out.println(obj.getGreeting("Mutiii"));
+        System.out.println("Harga setelah diskon = " + obj.hitungDiskon(10000000, 10));
     }
 
     public int getAngka() {
         return 10;
+    }
+
+    public long getLongValue() {
+        return 100000L;
+    }
+
+    public int getCumulativeData() {
+        int cumulatif = getAngka() * 2;
+        return cumulatif;
     }
 
     public double getNilaiDouble() {
@@ -30,4 +48,31 @@ public class Main {
     public String getNama() {
         return "Mutia";
     }
+
+    public int tambah(int a, int b) {
+        int hasil = a + b;
+        return hasil;
+    }
+
+    public int kurang(int a, int b) {
+        return a-b;
+    }
+
+    public boolean isLulus(int nilai) {
+        if (nilai >= 75) {
+            return true;
+        }
+        return false;
+    }
+
+    public String getGreeting(String nama) {
+        return "Halo, " + nama + "!";
+    }
+
+    public double hitungDiskon(double harga, double persenDiskon) {
+        double diskon = harga * persenDiskon / 100;
+        return harga - diskon;
+    }
+
+
 }

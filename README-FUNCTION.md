@@ -198,6 +198,8 @@ hitungLuasPersegiPanjang(8, 6);
 ### 📌 Definisi
 
 Function yang menerima input (parameter) dan mengembalikan hasil (return value).
+Void -> ga perlu return apapun (function tanpa tipe data)
+Return value -> sesuai dengan tipe data functionnya
 
 ---
 

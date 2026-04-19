@@ -6,15 +6,24 @@ public class FunctionTest {
         ft.tampilkanSalam();
         ft.tampilkanGaris();
         ft.tampilkanInfoSekolah();
-//        ft.tampilkanBiodata("Mutia", 26, "Jakarta");
 
-//        ft.tampilkanGaris();
-//        ft.sapaNama("Mutia");
-//        ft.hitungLuasPersegiPanjang(15, 8);
+        printNama();
+
+        ft.tampilkanGaris();
+        ft.sapaNama("Mutia");
+        ft.tampilkanBiodata("Mutia", 26, "Jakarta");
+        ft.hitungLuasPersegiPanjang(15, 8);
+        ft.hitungLuasPersegiPanjang(20, 10);
+        ft.isLoginSuccess(false);
+        ft.hitungKelilingPersegiPanjang(15, 8);
     }
 
     public void sapaNama(String nama) {
         System.out.println("Halo, " + nama + "!");
+    }
+
+    static void printNama() {
+        System.out.println("My name is mutia");
     }
 
     public void tampilkanSalam() {
@@ -44,6 +53,16 @@ public class FunctionTest {
         int luas = panjang * lebar;
         System.out.println("Persegi panjang dengan panjang " + panjang + " cm dan lebar " + lebar + " cm");
         System.out.println("Luas = " + luas + " cm2");
+    }
+
+    public void isLoginSuccess(boolean loginStatus) {
+        System.out.println("Ini login status usernya " + loginStatus);
+    }
+
+    public void hitungKelilingPersegiPanjang(int panjang, int lebar) {
+        int keliling = 2 * (panjang + lebar);
+        System.out.println("Persegi panjang dengan panjang " + panjang + " cm dan lebar " + lebar + " cm");
+        System.out.println("Keliling = " + keliling + " cm");
     }
 
 }
