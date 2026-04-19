@@ -10,4 +10,10 @@ public class Testing {
     public static void sapaNama(String nama) {
         System.out.println("Halo, " + nama + "!");
     }
+
+    public void hitung(int sisi) {
+        int total = sisi * sisi;
+        return;
+    }
+
 }
